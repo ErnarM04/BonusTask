@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/signuptitle"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="Sign Up"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:hint="First Name"
+        android:textSize="20dp"
+        android:layout_below="@id/signuptitle"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lastname"
+        android:hint="Last name"
+        android:layout_marginHorizontal="20dp"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:layout_below="@id/firstname"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/birthday"
+        android:hint="Birthday"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="date"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:layout_below="@id/lastname"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:hint="Login"
+        android:layout_marginHorizontal="20dp"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:layout_below="@id/birthday"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Password"
+        android:layout_marginHorizontal="20dp"
+        android:inputType="textPassword"
+        android:layout_margin="15dp"
+        android:textSize="20dp"
+        android:layout_below="@id/login"
+        />
+
+        <Button
+            android:id="@+id/signupbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginBottom="50dp"
+            android:accessibilityHeading="false"
+            android:accessibilityTraversalAfter="@id/password"
+            android:clickable="false"
+            android:text="Register"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
